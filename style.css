@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Slate-300: hsl(212, 45%, 89%);
+  --Slate-500: hsl(216, 15%, 48%);
+  --Slate-900: hsl(218, 44%, 22%);
+
+  --space-500: 40px;
+  --space-300: 24px;
+  --space-200: 16px;
+
+  --text-size-1: 22px;
+  --text-height-1: 120%;
+  --text-spacing-1: 0px;
+
+  --text-size-2: 15px;
+  --text-height-2: 140%;
+  --text-spacing-2: 0.2px;
+}
+
+body {
+  font-family: "Outfit";
+  background-color: var(--Slate-300);
+}
+
+main {
+  width: 320px;
+  height: 499px;
+  padding: var(--space-200) var(--space-200) var(--space-500);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  background-color: var(--White);
+  text-align: center;
+}
+
+img {
+  width: 288px;
+  height: 288px;
+  border-radius: 10px;
+  margin-bottom: var(--space-300);
+}
+
+.text {
+  padding: 0 16px;
+}
+
+h2 {
+  font-size: var(--text-size-1);
+  line-height: var(--text-height-1);
+  letter-spacing: var(--text-spacing-1);
+  color: var(--Slate-900);
+  margin-bottom: var(--space-200);
+}
+
+p {
+  color: var(--Slate-500);
+  font-size: var(--text-size-2);
+  line-height: var(--text-height-2);
+  letter-spacing: var(--text-spacing-2);
+}
